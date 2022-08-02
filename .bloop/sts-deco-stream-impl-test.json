@@ -1,0 +1,2970 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "sts-deco-stream-impl-test",
+        "directory": "/workspaces/sts-deco/sts-deco-stream-impl",
+        "workspaceDir": "/workspaces/sts-deco",
+        "sources": [
+            "/workspaces/sts-deco/sts-deco-stream-impl/src/test/scala",
+            "/workspaces/sts-deco/sts-deco-stream-impl/src/test/scala-2.13",
+            "/workspaces/sts-deco/sts-deco-stream-impl/src/test/scala-2",
+            "/workspaces/sts-deco/sts-deco-stream-impl/src/test/java",
+            "/workspaces/sts-deco/sts-deco-stream-impl/target/scala-2.13/src_managed/test"
+        ],
+        "dependencies": [
+            "sts-deco-stream-api",
+            "sts-deco-api",
+            "sts-deco-stream-impl"
+        ],
+        "classpath": [
+            "/workspaces/sts-deco/.bloop/sts-deco-stream-impl/scala-2.13/classes",
+            "/workspaces/sts-deco/.bloop/sts-deco-stream-api/scala-2.13/classes",
+            "/workspaces/sts-deco/.bloop/sts-deco-api/scala-2.13/classes",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-logback_2.13/1.6.7/lagom-logback_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-server_2.13/1.6.7/lagom-scaladsl-server_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-dev-mode_2.13/1.6.7/lagom-scaladsl-dev-mode_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-akka-http-server_2.13/2.8.11/play-akka-http-server_2.13-2.8.11.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-testkit_2.13/1.6.7/lagom-scaladsl-testkit_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/macwire/macros_2.13/2.3.3/macros_2.13-2.3.3.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.1.1/scalatest_2.13-3.1.1.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-api_2.13/1.6.7/lagom-scaladsl-api_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.32/jul-to-slf4j-1.7.32.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.7.32/log4j-over-slf4j-1.7.32.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play_2.13/2.8.11/play_2.13-2.8.11.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.13/0.4.2/ssl-config-core_2.13-0.4.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-json_2.13/2.9.1/play-json_2.13-2.9.1.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/1.1.2/scala-parser-combinators_2.13-1.1.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.13/2.6.17/akka-stream_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream-typed_2.13/2.6.17/akka-stream-typed_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.6.17/akka-actor_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_2.13/2.6.17/akka-actor-typed_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-serialization-jackson_2.13/2.6.17/akka-serialization-jackson_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.13/2.6.17/akka-slf4j_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf-v3_2.13/2.6.17/akka-protobuf-v3_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-ffi/2.1.10/jnr-ffi-2.1.10.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jffi/1.2.22/jffi-1.2.22.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-a64asm/1.0.0/jnr-a64asm-1.0.0.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-constants/0.9.14/jnr-constants-0.9.14.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/pcollections/pcollections/3.0.5/pcollections-3.0.5.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/1.0.2/scala-java8-compat_2.13-1.0.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.4/jackson-datatype-jdk8-2.11.4.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.4/jackson-datatype-jsr310-2.11.4.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.11.4/jackson-datatype-guava-2.11.4.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-pcollections/2.11.4/jackson-datatype-pcollections-2.11.4.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.4/jackson-module-parameter-names-2.11.4.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.11.4/jackson-module-paranamer-2.11.4.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.11.4/jackson-module-scala_2.13-2.11.4.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.11.4/jackson-dataformat-cbor-2.11.4.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/7.2/asm-7.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-analysis/7.2/asm-analysis-7.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-commons/7.2/asm-commons-7.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-tree/7.2/asm-tree-7.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-util/7.2/asm-util-7.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-akka-management-scaladsl_2.13/1.6.7/lagom-akka-management-scaladsl_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-server_2.13/1.6.7/lagom-server_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-client_2.13/1.6.7/lagom-scaladsl-client_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-play-json_2.13/1.6.7/lagom-scaladsl-play-json_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/akka/management/akka-management_2.13/1.0.5/akka-management_2.13-1.0.5.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-service-registry-client-core_2.13/1.6.7/lagom-service-registry-client-core_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-discovery_2.13/2.6.17/akka-discovery_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-server_2.13/2.8.11/play-server_2.13-2.8.11.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-streams_2.13/2.8.11/play-streams_2.13-2.8.11.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.13/10.1.15/akka-http-core_2.13-10.1.15.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-core-testkit_2.13/1.6.7/lagom-core-testkit_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-broker_2.13/1.6.7/lagom-scaladsl-broker_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-kafka-broker_2.13/1.6.7/lagom-scaladsl-kafka-broker_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-dev-mode-ssl-support_2.13/1.6.7/lagom-dev-mode-ssl-support_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-persistence-core_2.13/1.6.7/lagom-persistence-core_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-persistence_2.13/1.6.7/lagom-scaladsl-persistence_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-persistence-cassandra_2.13/1.6.7/lagom-scaladsl-persistence-cassandra_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream-testkit_2.13/2.6.17/akka-stream-testkit_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.1.1/scalactic_2.13-3.1.1.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-api_2.13/1.6.7/lagom-api_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.1.2/scala-collection-compat_2.13-2.1.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/build-link/2.8.11/build-link-2.8.11.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.13/1.5.1/twirl-api_2.13-1.5.1.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.0/config-1.4.0.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-functional_2.13/2.9.1/play-functional_2.13-2.9.1.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jffi/1.2.22/jffi-1.2.22-native.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-akka-management-core_2.13/1.6.7/lagom-akka-management-core_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-client_2.13/1.6.7/lagom-client_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.13/10.1.15/akka-http_2.13-10.1.15.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.13/10.1.15/akka-http-spray-json_2.13-10.1.15.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/spray/spray-json_2.13/1.3.6/spray-json_2.13-1.3.6.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.13/10.1.15/akka-parsing_2.13-10.1.15.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-persistence-testkit_2.13/1.6.7/lagom-persistence-testkit_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence-cassandra-launcher_2.13/0.106/akka-persistence-cassandra-launcher_2.13-0.106.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-posix/3.0.50/jnr-posix-3.0.50.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.10.5/byte-buddy-1.10.5.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-kafka-broker_2.13/1.6.7/lagom-kafka-broker_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-kafka-client_2.13/1.6.7/lagom-scaladsl-kafka-client_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-cluster-core_2.13/1.6.7/lagom-cluster-core_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence_2.13/2.6.17/akka-persistence_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence-query_2.13/2.6.17/akka-persistence-query_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-sharding_2.13/2.6.17/akka-cluster-sharding_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence-typed_2.13/2.6.17/akka-persistence-typed_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-sharding-typed_2.13/2.6.17/akka-cluster-sharding-typed_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-cluster_2.13/1.6.7/lagom-scaladsl-cluster_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-projection_2.13/1.6.7/lagom-scaladsl-projection_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.13/2.6.17/akka-testkit_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-persistence-cassandra-core_2.13/1.6.7/lagom-persistence-cassandra-core_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.8.11/play-exceptions-2.8.11.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-spi_2.13/1.6.7/lagom-spi_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws_2.13/2.8.11/play-ws_2.13-2.8.11.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws_2.13/2.8.11/play-ahc-ws_2.13-2.8.11.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.2.6/metrics-core-3.2.6.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/netty/netty-reactive-streams/2.0.5/netty-reactive-streams-2.0.5.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.63.Final/netty-codec-http-4.1.63.Final.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-handler/4.1.63.Final/netty-handler-4.1.63.Final.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-testkit-typed_2.13/2.6.17/akka-actor-testkit-typed_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-projection-core_2.13/1.6.7/lagom-projection-core_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-kafka-client_2.13/1.6.7/lagom-kafka-client_2.13-1.6.7.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.1.1/kafka-clients-2.1.1.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster_2.13/2.6.17/akka-cluster_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-typed_2.13/2.6.17/akka-cluster-typed_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/akka/management/akka-management-cluster-bootstrap_2.13/1.0.5/akka-management-cluster-bootstrap_2.13-1.0.5.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/akka/management/akka-management-cluster-http_2.13/1.0.5/akka-management-cluster-http_2.13-1.0.5.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-distributed-data_2.13/2.6.17/akka-distributed-data_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-tools_2.13/2.6.17/akka-cluster-tools_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.13/2.6.17/akka-remote_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence-cassandra_2.13/0.106/akka-persistence-cassandra_2.13-0.106.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone_2.13/2.1.6/play-ws-standalone_2.13-2.1.6.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-xml_2.13/2.1.6/play-ws-standalone-xml_2.13-2.1.6.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-json_2.13/2.1.6/play-ws-standalone-json_2.13-2.1.6.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws-standalone_2.13/2.1.6/play-ahc-ws-standalone_2.13-2.1.6.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/shaded-asynchttpclient/2.1.6/shaded-asynchttpclient-2.1.6.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/shaded-oauth/2.1.6/shaded-oauth-2.1.6.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/cache/cache-api/1.1.1/cache-api-1.1.1.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-common/4.1.63.Final/netty-common-4.1.63.Final.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-buffer/4.1.63.Final/netty-buffer-4.1.63.Final.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport/4.1.63.Final/netty-transport-4.1.63.Final.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec/4.1.63.Final/netty-codec-4.1.63.Final.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-resolver/4.1.63.Final/netty-resolver-4.1.63.Final.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream-kafka_2.13/1.1.0/akka-stream-kafka_2.13-1.1.0.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.3.7-1/zstd-jni-1.3.7-1.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.2/snappy-java-1.1.7.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-coordination_2.13/2.6.17/akka-coordination_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/lmdbjava/lmdbjava/0.7.0/lmdbjava-0.7.0.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-pki_2.13/2.6.17/akka-pki_2.13-2.6.17.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/agrona/agrona/1.9.0/agrona-1.9.0.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.7.2/cassandra-driver-core-3.7.2.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/cachecontrol_2.13/2.0.0/cachecontrol_2.13-2.0.0.jar",
+            "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/hierynomus/asn-one/0.5.0/asn-one-0.5.0.jar"
+        ],
+        "out": "/workspaces/sts-deco/.bloop/sts-deco-stream-impl",
+        "classesDir": "/workspaces/sts-deco/.bloop/sts-deco-stream-impl/scala-2.13/test-classes",
+        "resources": [
+            "/workspaces/sts-deco/sts-deco-stream-impl/src/test/resources",
+            "/workspaces/sts-deco/sts-deco-stream-impl/target/scala-2.13/resource_managed/test"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.8",
+            "options": [
+                
+            ],
+            "jars": [
+                "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar",
+                "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.8/scala-compiler-2.13.8.jar",
+                "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8.jar",
+                "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.21.0/jline-3.21.0.jar",
+                "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.9.0/jna-5.9.0.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                "-g",
+                "-encoding",
+                "UTF-8",
+                "-source",
+                "1.8",
+                "-target",
+                "1.8",
+                "-parameters",
+                "-Xlint:unchecked",
+                "-Xlint:deprecation"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/usr/lib/jvm/msopenjdk-11",
+                "options": [
+                    "-Duser.dir=/workspaces/sts-deco"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-logback_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-logback_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-logback_2.13/1.6.7/lagom-logback_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-logback_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-logback_2.13/1.6.7/lagom-logback_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-server_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-server_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-server_2.13/1.6.7/lagom-scaladsl-server_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-server_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-server_2.13/1.6.7/lagom-scaladsl-server_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-dev-mode_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-dev-mode_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-dev-mode_2.13/1.6.7/lagom-scaladsl-dev-mode_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-dev-mode_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-dev-mode_2.13/1.6.7/lagom-scaladsl-dev-mode_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-akka-http-server_2.13",
+                    "version": "2.8.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-akka-http-server_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-akka-http-server_2.13/2.8.11/play-akka-http-server_2.13-2.8.11.jar"
+                        },
+                        {
+                            "name": "play-akka-http-server_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-akka-http-server_2.13/2.8.11/play-akka-http-server_2.13-2.8.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-api_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-api_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-api_2.13/1.6.7/lagom-scaladsl-api_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-api_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-api_2.13/1.6.7/lagom-scaladsl-api_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "jcl-over-slf4j",
+                    "version": "1.7.32",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jcl-over-slf4j",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar"
+                        },
+                        {
+                            "name": "jcl-over-slf4j",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "jul-to-slf4j",
+                    "version": "1.7.32",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jul-to-slf4j",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.32/jul-to-slf4j-1.7.32.jar"
+                        },
+                        {
+                            "name": "jul-to-slf4j",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.32/jul-to-slf4j-1.7.32-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "log4j-over-slf4j",
+                    "version": "1.7.32",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "log4j-over-slf4j",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.7.32/log4j-over-slf4j-1.7.32.jar"
+                        },
+                        {
+                            "name": "log4j-over-slf4j",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/log4j-over-slf4j/1.7.32/log4j-over-slf4j-1.7.32-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.32",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play_2.13",
+                    "version": "2.8.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play_2.13/2.8.11/play_2.13-2.8.11.jar"
+                        },
+                        {
+                            "name": "play_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play_2.13/2.8.11/play_2.13-2.8.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.reactivestreams",
+                    "name": "reactive-streams",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "reactive-streams",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar"
+                        },
+                        {
+                            "name": "reactive-streams",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "ssl-config-core_2.13",
+                    "version": "0.4.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ssl-config-core_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.13/0.4.2/ssl-config-core_2.13-0.4.2.jar"
+                        },
+                        {
+                            "name": "ssl-config-core_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.13/0.4.2/ssl-config-core_2.13-0.4.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-json_2.13",
+                    "version": "2.9.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-json_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-json_2.13/2.9.1/play-json_2.13-2.9.1.jar"
+                        },
+                        {
+                            "name": "play-json_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-json_2.13/2.9.1/play-json_2.13-2.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-parser-combinators_2.13",
+                    "version": "1.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/1.1.2/scala-parser-combinators_2.13-1.1.2.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/1.1.2/scala-parser-combinators_2.13-1.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-stream_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-stream_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.13/2.6.17/akka-stream_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-stream_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.13/2.6.17/akka-stream_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-stream-typed_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-stream-typed_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream-typed_2.13/2.6.17/akka-stream-typed_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-stream-typed_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream-typed_2.13/2.6.17/akka-stream-typed_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-actor_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-actor_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.6.17/akka-actor_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-actor_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.6.17/akka-actor_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-actor-typed_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-actor-typed_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_2.13/2.6.17/akka-actor-typed_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-actor-typed_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_2.13/2.6.17/akka-actor-typed_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-serialization-jackson_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-serialization-jackson_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-serialization-jackson_2.13/2.6.17/akka-serialization-jackson_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-serialization-jackson_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-serialization-jackson_2.13/2.6.17/akka-serialization-jackson_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-slf4j_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-slf4j_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.13/2.6.17/akka-slf4j_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-slf4j_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.13/2.6.17/akka-slf4j_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-protobuf-v3_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-protobuf-v3_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf-v3_2.13/2.6.17/akka-protobuf-v3_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-protobuf-v3_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf-v3_2.13/2.6.17/akka-protobuf-v3_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.13",
+                    "version": "1.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "guava",
+                    "version": "30.1.1-jre",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "guava",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar"
+                        },
+                        {
+                            "name": "guava",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.jnr",
+                    "name": "jnr-ffi",
+                    "version": "2.1.10",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jnr-ffi",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-ffi/2.1.10/jnr-ffi-2.1.10.jar"
+                        },
+                        {
+                            "name": "jnr-ffi",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-ffi/2.1.10/jnr-ffi-2.1.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.jnr",
+                    "name": "jffi",
+                    "version": "1.2.22",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jffi",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jffi/1.2.22/jffi-1.2.22.jar"
+                        },
+                        {
+                            "name": "jffi",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jffi/1.2.22/jffi-1.2.22-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.jnr",
+                    "name": "jnr-a64asm",
+                    "version": "1.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jnr-a64asm",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-a64asm/1.0.0/jnr-a64asm-1.0.0.jar"
+                        },
+                        {
+                            "name": "jnr-a64asm",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-a64asm/1.0.0/jnr-a64asm-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.jnr",
+                    "name": "jnr-constants",
+                    "version": "0.9.14",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jnr-constants",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-constants/0.9.14/jnr-constants-0.9.14.jar"
+                        },
+                        {
+                            "name": "jnr-constants",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-constants/0.9.14/jnr-constants-0.9.14-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.pcollections",
+                    "name": "pcollections",
+                    "version": "3.0.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pcollections",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/pcollections/pcollections/3.0.5/pcollections-3.0.5.jar"
+                        },
+                        {
+                            "name": "pcollections",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/pcollections/pcollections/3.0.5/pcollections-3.0.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-java8-compat_2.13",
+                    "version": "1.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-java8-compat_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/1.0.2/scala-java8-compat_2.13-1.0.2.jar"
+                        },
+                        {
+                            "name": "scala-java8-compat_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/1.0.2/scala-java8-compat_2.13-1.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.11.4/jackson-annotations-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.11.4/jackson-core-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.11.4/jackson-databind-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jdk8",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.4/jackson-datatype-jdk8-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.4/jackson-datatype-jdk8-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jsr310",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.4/jackson-datatype-jsr310-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.4/jackson-datatype-jsr310-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-guava",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-guava",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.11.4/jackson-datatype-guava-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-guava",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.11.4/jackson-datatype-guava-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-pcollections",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-pcollections",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-pcollections/2.11.4/jackson-datatype-pcollections-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-pcollections",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-pcollections/2.11.4/jackson-datatype-pcollections-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-parameter-names",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-parameter-names",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.4/jackson-module-parameter-names-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-module-parameter-names",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.4/jackson-module-parameter-names-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-paranamer",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-paranamer",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.11.4/jackson-module-paranamer-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-module-paranamer",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-paranamer/2.11.4/jackson-module-paranamer-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.module",
+                    "name": "jackson-module-scala_2.13",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-module-scala_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.11.4/jackson-module-scala_2.13-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-module-scala_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.13/2.11.4/jackson-module-scala_2.13-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.dataformat",
+                    "name": "jackson-dataformat-cbor",
+                    "version": "2.11.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-dataformat-cbor",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.11.4/jackson-dataformat-cbor-2.11.4.jar"
+                        },
+                        {
+                            "name": "jackson-dataformat-cbor",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.11.4/jackson-dataformat-cbor-2.11.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.ow2.asm",
+                    "name": "asm",
+                    "version": "7.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "asm",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/7.2/asm-7.2.jar"
+                        },
+                        {
+                            "name": "asm",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm/7.2/asm-7.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.ow2.asm",
+                    "name": "asm-analysis",
+                    "version": "7.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "asm-analysis",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-analysis/7.2/asm-analysis-7.2.jar"
+                        },
+                        {
+                            "name": "asm-analysis",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-analysis/7.2/asm-analysis-7.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.ow2.asm",
+                    "name": "asm-commons",
+                    "version": "7.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "asm-commons",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-commons/7.2/asm-commons-7.2.jar"
+                        },
+                        {
+                            "name": "asm-commons",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-commons/7.2/asm-commons-7.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.ow2.asm",
+                    "name": "asm-tree",
+                    "version": "7.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "asm-tree",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-tree/7.2/asm-tree-7.2.jar"
+                        },
+                        {
+                            "name": "asm-tree",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-tree/7.2/asm-tree-7.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.ow2.asm",
+                    "name": "asm-util",
+                    "version": "7.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "asm-util",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-util/7.2/asm-util-7.2.jar"
+                        },
+                        {
+                            "name": "asm-util",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/ow2/asm/asm-util/7.2/asm-util-7.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-core",
+                    "version": "1.2.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-core",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar"
+                        },
+                        {
+                            "name": "logback-core",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.qos.logback",
+                    "name": "logback-classic",
+                    "version": "1.2.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logback-classic",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar"
+                        },
+                        {
+                            "name": "logback-classic",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-akka-management-scaladsl_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-akka-management-scaladsl_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-akka-management-scaladsl_2.13/1.6.7/lagom-akka-management-scaladsl_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-akka-management-scaladsl_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-akka-management-scaladsl_2.13/1.6.7/lagom-akka-management-scaladsl_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-server_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-server_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-server_2.13/1.6.7/lagom-server_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-server_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-server_2.13/1.6.7/lagom-server_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-client_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-client_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-client_2.13/1.6.7/lagom-scaladsl-client_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-client_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-client_2.13/1.6.7/lagom-scaladsl-client_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-play-json_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-play-json_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-play-json_2.13/1.6.7/lagom-scaladsl-play-json_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-play-json_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-play-json_2.13/1.6.7/lagom-scaladsl-play-json_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.akka.management",
+                    "name": "akka-management_2.13",
+                    "version": "1.0.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-management_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/akka/management/akka-management_2.13/1.0.5/akka-management_2.13-1.0.5.jar"
+                        },
+                        {
+                            "name": "akka-management_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/akka/management/akka-management_2.13/1.0.5/akka-management_2.13-1.0.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-service-registry-client-core_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-service-registry-client-core_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-service-registry-client-core_2.13/1.6.7/lagom-service-registry-client-core_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-service-registry-client-core_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-service-registry-client-core_2.13/1.6.7/lagom-service-registry-client-core_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-discovery_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-discovery_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-discovery_2.13/2.6.17/akka-discovery_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-discovery_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-discovery_2.13/2.6.17/akka-discovery_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-server_2.13",
+                    "version": "2.8.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-server_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-server_2.13/2.8.11/play-server_2.13-2.8.11.jar"
+                        },
+                        {
+                            "name": "play-server_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-server_2.13/2.8.11/play-server_2.13-2.8.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-streams_2.13",
+                    "version": "2.8.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-streams_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-streams_2.13/2.8.11/play-streams_2.13-2.8.11.jar"
+                        },
+                        {
+                            "name": "play-streams_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-streams_2.13/2.8.11/play-streams_2.13-2.8.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-http-core_2.13",
+                    "version": "10.1.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-http-core_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.13/10.1.15/akka-http-core_2.13-10.1.15.jar"
+                        },
+                        {
+                            "name": "akka-http-core_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.13/10.1.15/akka-http-core_2.13-10.1.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-api_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-api_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-api_2.13/1.6.7/lagom-api_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-api_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-api_2.13/1.6.7/lagom-api_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_2.13",
+                    "version": "2.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.1.2/scala-collection-compat_2.13-2.1.2.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.1.2/scala-collection-compat_2.13-2.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "build-link",
+                    "version": "2.8.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "build-link",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/build-link/2.8.11/build-link-2.8.11.jar"
+                        },
+                        {
+                            "name": "build-link",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/build-link/2.8.11/build-link-2.8.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "twirl-api_2.13",
+                    "version": "1.5.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "twirl-api_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.13/1.5.1/twirl-api_2.13-1.5.1.jar"
+                        },
+                        {
+                            "name": "twirl-api_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.13/1.5.1/twirl-api_2.13-1.5.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.jsonwebtoken",
+                    "name": "jjwt",
+                    "version": "0.9.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jjwt",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar"
+                        },
+                        {
+                            "name": "jjwt",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "jakarta.xml.bind",
+                    "name": "jakarta.xml.bind-api",
+                    "version": "2.3.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jakarta.xml.bind-api",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar"
+                        },
+                        {
+                            "name": "jakarta.xml.bind-api",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "jakarta.transaction",
+                    "name": "jakarta.transaction-api",
+                    "version": "1.3.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jakarta.transaction-api",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar"
+                        },
+                        {
+                            "name": "jakarta.transaction-api",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.inject",
+                    "name": "javax.inject",
+                    "version": "1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javax.inject",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar"
+                        },
+                        {
+                            "name": "javax.inject",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "config",
+                    "version": "1.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "config",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.0/config-1.4.0.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.0/config-1.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-functional_2.13",
+                    "version": "2.9.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-functional_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-functional_2.13/2.9.1/play-functional_2.13-2.9.1.jar"
+                        },
+                        {
+                            "name": "play-functional_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-functional_2.13/2.9.1/play-functional_2.13-2.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.lz4",
+                    "name": "lz4-java",
+                    "version": "1.8.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lz4-java",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar"
+                        },
+                        {
+                            "name": "lz4-java",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "failureaccess",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "failureaccess",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
+                        },
+                        {
+                            "name": "failureaccess",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "listenablefuture",
+                    "version": "9999.0-empty-to-avoid-conflict-with-guava",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "listenablefuture",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.checkerframework",
+                    "name": "checker-qual",
+                    "version": "3.8.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "checker-qual",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar"
+                        },
+                        {
+                            "name": "checker-qual",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.errorprone",
+                    "name": "error_prone_annotations",
+                    "version": "2.5.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "error_prone_annotations",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar"
+                        },
+                        {
+                            "name": "error_prone_annotations",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.j2objc",
+                    "name": "j2objc-annotations",
+                    "version": "1.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "j2objc-annotations",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar"
+                        },
+                        {
+                            "name": "j2objc-annotations",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.jnr",
+                    "name": "jnr-x86asm",
+                    "version": "1.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jnr-x86asm",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.jar"
+                        },
+                        {
+                            "name": "jnr-x86asm",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.thoughtworks.paranamer",
+                    "name": "paranamer",
+                    "version": "2.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "paranamer",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"
+                        },
+                        {
+                            "name": "paranamer",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-akka-management-core_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-akka-management-core_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-akka-management-core_2.13/1.6.7/lagom-akka-management-core_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-akka-management-core_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-akka-management-core_2.13/1.6.7/lagom-akka-management-core_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-client_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-client_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-client_2.13/1.6.7/lagom-client_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-client_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-client_2.13/1.6.7/lagom-client_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-http_2.13",
+                    "version": "10.1.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-http_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.13/10.1.15/akka-http_2.13-10.1.15.jar"
+                        },
+                        {
+                            "name": "akka-http_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.13/10.1.15/akka-http_2.13-10.1.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-http-spray-json_2.13",
+                    "version": "10.1.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-http-spray-json_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.13/10.1.15/akka-http-spray-json_2.13-10.1.15.jar"
+                        },
+                        {
+                            "name": "akka-http-spray-json_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.13/10.1.15/akka-http-spray-json_2.13-10.1.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.spray",
+                    "name": "spray-json_2.13",
+                    "version": "1.3.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "spray-json_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/spray/spray-json_2.13/1.3.6/spray-json_2.13-1.3.6.jar"
+                        },
+                        {
+                            "name": "spray-json_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/spray/spray-json_2.13/1.3.6/spray-json_2.13-1.3.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-parsing_2.13",
+                    "version": "10.1.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-parsing_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.13/10.1.15/akka-parsing_2.13-10.1.15.jar"
+                        },
+                        {
+                            "name": "akka-parsing_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.13/10.1.15/akka-parsing_2.13-10.1.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-exceptions",
+                    "version": "2.8.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-exceptions",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.8.11/play-exceptions-2.8.11.jar"
+                        },
+                        {
+                            "name": "play-exceptions",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.8.11/play-exceptions-2.8.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "jakarta.activation",
+                    "name": "jakarta.activation-api",
+                    "version": "1.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jakarta.activation-api",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar"
+                        },
+                        {
+                            "name": "jakarta.activation-api",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-spi_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-spi_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-spi_2.13/1.6.7/lagom-spi_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-spi_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-spi_2.13/1.6.7/lagom-spi_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ws_2.13",
+                    "version": "2.8.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ws_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws_2.13/2.8.11/play-ws_2.13-2.8.11.jar"
+                        },
+                        {
+                            "name": "play-ws_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws_2.13/2.8.11/play-ws_2.13-2.8.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ahc-ws_2.13",
+                    "version": "2.8.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ahc-ws_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws_2.13/2.8.11/play-ahc-ws_2.13-2.8.11.jar"
+                        },
+                        {
+                            "name": "play-ahc-ws_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws_2.13/2.8.11/play-ahc-ws_2.13-2.8.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.dropwizard.metrics",
+                    "name": "metrics-core",
+                    "version": "3.2.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "metrics-core",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.2.6/metrics-core-3.2.6.jar"
+                        },
+                        {
+                            "name": "metrics-core",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.2.6/metrics-core-3.2.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.netty",
+                    "name": "netty-reactive-streams",
+                    "version": "2.0.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-reactive-streams",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/netty/netty-reactive-streams/2.0.5/netty-reactive-streams-2.0.5.jar"
+                        },
+                        {
+                            "name": "netty-reactive-streams",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/netty/netty-reactive-streams/2.0.5/netty-reactive-streams-2.0.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http",
+                    "version": "4.1.63.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.63.Final/netty-codec-http-4.1.63.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.63.Final/netty-codec-http-4.1.63.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler",
+                    "version": "4.1.63.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-handler/4.1.63.Final/netty-handler-4.1.63.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-handler/4.1.63.Final/netty-handler-4.1.63.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ws-standalone_2.13",
+                    "version": "2.1.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ws-standalone_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone_2.13/2.1.6/play-ws-standalone_2.13-2.1.6.jar"
+                        },
+                        {
+                            "name": "play-ws-standalone_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone_2.13/2.1.6/play-ws-standalone_2.13-2.1.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ws-standalone-xml_2.13",
+                    "version": "2.1.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ws-standalone-xml_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-xml_2.13/2.1.6/play-ws-standalone-xml_2.13-2.1.6.jar"
+                        },
+                        {
+                            "name": "play-ws-standalone-xml_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-xml_2.13/2.1.6/play-ws-standalone-xml_2.13-2.1.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ws-standalone-json_2.13",
+                    "version": "2.1.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ws-standalone-json_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-json_2.13/2.1.6/play-ws-standalone-json_2.13-2.1.6.jar"
+                        },
+                        {
+                            "name": "play-ws-standalone-json_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-json_2.13/2.1.6/play-ws-standalone-json_2.13-2.1.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-ahc-ws-standalone_2.13",
+                    "version": "2.1.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ahc-ws-standalone_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws-standalone_2.13/2.1.6/play-ahc-ws-standalone_2.13-2.1.6.jar"
+                        },
+                        {
+                            "name": "play-ahc-ws-standalone_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws-standalone_2.13/2.1.6/play-ahc-ws-standalone_2.13-2.1.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "shaded-asynchttpclient",
+                    "version": "2.1.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "shaded-asynchttpclient",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/shaded-asynchttpclient/2.1.6/shaded-asynchttpclient-2.1.6.jar"
+                        },
+                        {
+                            "name": "shaded-asynchttpclient",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/shaded-asynchttpclient/2.1.6/shaded-asynchttpclient-2.1.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "shaded-oauth",
+                    "version": "2.1.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "shaded-oauth",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/shaded-oauth/2.1.6/shaded-oauth-2.1.6.jar"
+                        },
+                        {
+                            "name": "shaded-oauth",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/shaded-oauth/2.1.6/shaded-oauth-2.1.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "javax.cache",
+                    "name": "cache-api",
+                    "version": "1.1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cache-api",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/cache/cache-api/1.1.1/cache-api-1.1.1.jar"
+                        },
+                        {
+                            "name": "cache-api",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/cache/cache-api/1.1.1/cache-api-1.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-common",
+                    "version": "4.1.63.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-common",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-common/4.1.63.Final/netty-common-4.1.63.Final.jar"
+                        },
+                        {
+                            "name": "netty-common",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-common/4.1.63.Final/netty-common-4.1.63.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-buffer",
+                    "version": "4.1.63.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-buffer",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-buffer/4.1.63.Final/netty-buffer-4.1.63.Final.jar"
+                        },
+                        {
+                            "name": "netty-buffer",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-buffer/4.1.63.Final/netty-buffer-4.1.63.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport",
+                    "version": "4.1.63.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport/4.1.63.Final/netty-transport-4.1.63.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport/4.1.63.Final/netty-transport-4.1.63.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec",
+                    "version": "4.1.63.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec/4.1.63.Final/netty-codec-4.1.63.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec/4.1.63.Final/netty-codec-4.1.63.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver",
+                    "version": "4.1.63.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-resolver/4.1.63.Final/netty-resolver-4.1.63.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-resolver/4.1.63.Final/netty-resolver-4.1.63.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "cachecontrol_2.13",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cachecontrol_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/cachecontrol_2.13/2.0.0/cachecontrol_2.13-2.0.0.jar"
+                        },
+                        {
+                            "name": "cachecontrol_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/cachecontrol_2.13/2.0.0/cachecontrol_2.13-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.softwaremill.macwire",
+                    "name": "macros_2.13",
+                    "version": "2.3.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "macros_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/macwire/macros_2.13/2.3.3/macros_2.13-2.3.3.jar"
+                        },
+                        {
+                            "name": "macros_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/softwaremill/macwire/macros_2.13/2.3.3/macros_2.13-2.3.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-dev-mode-ssl-support_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-dev-mode-ssl-support_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-dev-mode-ssl-support_2.13/1.6.7/lagom-dev-mode-ssl-support_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-dev-mode-ssl-support_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-dev-mode-ssl-support_2.13/1.6.7/lagom-dev-mode-ssl-support_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.8",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-testkit_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-testkit_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-testkit_2.13/1.6.7/lagom-scaladsl-testkit_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-testkit_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-testkit_2.13/1.6.7/lagom-scaladsl-testkit_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_2.13",
+                    "version": "3.1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.1.1/scalatest_2.13-3.1.1.jar"
+                        },
+                        {
+                            "name": "scalatest_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.1.1/scalatest_2.13-3.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-core-testkit_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-core-testkit_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-core-testkit_2.13/1.6.7/lagom-core-testkit_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-core-testkit_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-core-testkit_2.13/1.6.7/lagom-core-testkit_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-broker_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-broker_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-broker_2.13/1.6.7/lagom-scaladsl-broker_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-broker_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-broker_2.13/1.6.7/lagom-scaladsl-broker_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-kafka-broker_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-kafka-broker_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-kafka-broker_2.13/1.6.7/lagom-scaladsl-kafka-broker_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-kafka-broker_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-kafka-broker_2.13/1.6.7/lagom-scaladsl-kafka-broker_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-persistence-core_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-persistence-core_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-persistence-core_2.13/1.6.7/lagom-persistence-core_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-persistence-core_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-persistence-core_2.13/1.6.7/lagom-persistence-core_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-persistence_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-persistence_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-persistence_2.13/1.6.7/lagom-scaladsl-persistence_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-persistence_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-persistence_2.13/1.6.7/lagom-scaladsl-persistence_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-persistence-cassandra_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-persistence-cassandra_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-persistence-cassandra_2.13/1.6.7/lagom-scaladsl-persistence-cassandra_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-persistence-cassandra_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-persistence-cassandra_2.13/1.6.7/lagom-scaladsl-persistence-cassandra_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-stream-testkit_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-stream-testkit_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream-testkit_2.13/2.6.17/akka-stream-testkit_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-stream-testkit_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream-testkit_2.13/2.6.17/akka-stream-testkit_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "junit",
+                    "name": "junit",
+                    "version": "4.13.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "junit",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar"
+                        },
+                        {
+                            "name": "junit",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalactic",
+                    "name": "scalactic_2.13",
+                    "version": "3.1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalactic_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.1.1/scalactic_2.13-3.1.1.jar"
+                        },
+                        {
+                            "name": "scalactic_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.1.1/scalactic_2.13-3.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-persistence-testkit_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-persistence-testkit_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-persistence-testkit_2.13/1.6.7/lagom-persistence-testkit_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-persistence-testkit_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-persistence-testkit_2.13/1.6.7/lagom-persistence-testkit_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-persistence-cassandra-launcher_2.13",
+                    "version": "0.106",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-persistence-cassandra-launcher_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence-cassandra-launcher_2.13/0.106/akka-persistence-cassandra-launcher_2.13-0.106.jar"
+                        },
+                        {
+                            "name": "akka-persistence-cassandra-launcher_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence-cassandra-launcher_2.13/0.106/akka-persistence-cassandra-launcher_2.13-0.106-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.jnr",
+                    "name": "jnr-posix",
+                    "version": "3.0.50",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jnr-posix",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-posix/3.0.50/jnr-posix-3.0.50.jar"
+                        },
+                        {
+                            "name": "jnr-posix",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/jnr/jnr-posix/3.0.50/jnr-posix-3.0.50-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.bytebuddy",
+                    "name": "byte-buddy",
+                    "version": "1.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "byte-buddy",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.10.5/byte-buddy-1.10.5.jar"
+                        },
+                        {
+                            "name": "byte-buddy",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.10.5/byte-buddy-1.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-kafka-broker_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-kafka-broker_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-kafka-broker_2.13/1.6.7/lagom-kafka-broker_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-kafka-broker_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-kafka-broker_2.13/1.6.7/lagom-kafka-broker_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-kafka-client_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-kafka-client_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-kafka-client_2.13/1.6.7/lagom-scaladsl-kafka-client_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-kafka-client_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-kafka-client_2.13/1.6.7/lagom-scaladsl-kafka-client_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-cluster-core_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-cluster-core_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-cluster-core_2.13/1.6.7/lagom-cluster-core_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-cluster-core_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-cluster-core_2.13/1.6.7/lagom-cluster-core_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-persistence_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-persistence_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence_2.13/2.6.17/akka-persistence_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-persistence_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence_2.13/2.6.17/akka-persistence_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-persistence-query_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-persistence-query_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence-query_2.13/2.6.17/akka-persistence-query_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-persistence-query_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence-query_2.13/2.6.17/akka-persistence-query_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-cluster-sharding_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-cluster-sharding_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-sharding_2.13/2.6.17/akka-cluster-sharding_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-cluster-sharding_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-sharding_2.13/2.6.17/akka-cluster-sharding_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-persistence-typed_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-persistence-typed_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence-typed_2.13/2.6.17/akka-persistence-typed_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-persistence-typed_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence-typed_2.13/2.6.17/akka-persistence-typed_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-cluster-sharding-typed_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-cluster-sharding-typed_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-sharding-typed_2.13/2.6.17/akka-cluster-sharding-typed_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-cluster-sharding-typed_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-sharding-typed_2.13/2.6.17/akka-cluster-sharding-typed_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-cluster_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-cluster_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-cluster_2.13/1.6.7/lagom-scaladsl-cluster_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-cluster_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-cluster_2.13/1.6.7/lagom-scaladsl-cluster_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-scaladsl-projection_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-scaladsl-projection_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-projection_2.13/1.6.7/lagom-scaladsl-projection_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-scaladsl-projection_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-scaladsl-projection_2.13/1.6.7/lagom-scaladsl-projection_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-testkit_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-testkit_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.13/2.6.17/akka-testkit_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-testkit_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.13/2.6.17/akka-testkit_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-persistence-cassandra-core_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-persistence-cassandra-core_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-persistence-cassandra-core_2.13/1.6.7/lagom-persistence-cassandra-core_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-persistence-cassandra-core_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-persistence-cassandra-core_2.13/1.6.7/lagom-persistence-cassandra-core_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.hamcrest",
+                    "name": "hamcrest-core",
+                    "version": "1.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "hamcrest-core",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"
+                        },
+                        {
+                            "name": "hamcrest-core",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-actor-testkit-typed_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-actor-testkit-typed_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-testkit-typed_2.13/2.6.17/akka-actor-testkit-typed_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-actor-testkit-typed_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-testkit-typed_2.13/2.6.17/akka-actor-testkit-typed_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-projection-core_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-projection-core_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-projection-core_2.13/1.6.7/lagom-projection-core_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-projection-core_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-projection-core_2.13/1.6.7/lagom-projection-core_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.lagom",
+                    "name": "lagom-kafka-client_2.13",
+                    "version": "1.6.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lagom-kafka-client_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-kafka-client_2.13/1.6.7/lagom-kafka-client_2.13-1.6.7.jar"
+                        },
+                        {
+                            "name": "lagom-kafka-client_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/lagom/lagom-kafka-client_2.13/1.6.7/lagom-kafka-client_2.13-1.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.kafka",
+                    "name": "kafka-clients",
+                    "version": "2.1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "kafka-clients",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.1.1/kafka-clients-2.1.1.jar"
+                        },
+                        {
+                            "name": "kafka-clients",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/kafka/kafka-clients/2.1.1/kafka-clients-2.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-cluster_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-cluster_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster_2.13/2.6.17/akka-cluster_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-cluster_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster_2.13/2.6.17/akka-cluster_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-cluster-typed_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-cluster-typed_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-typed_2.13/2.6.17/akka-cluster-typed_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-cluster-typed_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-typed_2.13/2.6.17/akka-cluster-typed_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.akka.management",
+                    "name": "akka-management-cluster-bootstrap_2.13",
+                    "version": "1.0.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-management-cluster-bootstrap_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/akka/management/akka-management-cluster-bootstrap_2.13/1.0.5/akka-management-cluster-bootstrap_2.13-1.0.5.jar"
+                        },
+                        {
+                            "name": "akka-management-cluster-bootstrap_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/akka/management/akka-management-cluster-bootstrap_2.13/1.0.5/akka-management-cluster-bootstrap_2.13-1.0.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lightbend.akka.management",
+                    "name": "akka-management-cluster-http_2.13",
+                    "version": "1.0.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-management-cluster-http_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/akka/management/akka-management-cluster-http_2.13/1.0.5/akka-management-cluster-http_2.13-1.0.5.jar"
+                        },
+                        {
+                            "name": "akka-management-cluster-http_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lightbend/akka/management/akka-management-cluster-http_2.13/1.0.5/akka-management-cluster-http_2.13-1.0.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-distributed-data_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-distributed-data_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-distributed-data_2.13/2.6.17/akka-distributed-data_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-distributed-data_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-distributed-data_2.13/2.6.17/akka-distributed-data_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-cluster-tools_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-cluster-tools_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-tools_2.13/2.6.17/akka-cluster-tools_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-cluster-tools_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-tools_2.13/2.6.17/akka-cluster-tools_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-remote_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-remote_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.13/2.6.17/akka-remote_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-remote_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.13/2.6.17/akka-remote_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-persistence-cassandra_2.13",
+                    "version": "0.106",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-persistence-cassandra_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence-cassandra_2.13/0.106/akka-persistence-cassandra_2.13-0.106.jar"
+                        },
+                        {
+                            "name": "akka-persistence-cassandra_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-persistence-cassandra_2.13/0.106/akka-persistence-cassandra_2.13-0.106-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-stream-kafka_2.13",
+                    "version": "1.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-stream-kafka_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream-kafka_2.13/1.1.0/akka-stream-kafka_2.13-1.1.0.jar"
+                        },
+                        {
+                            "name": "akka-stream-kafka_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream-kafka_2.13/1.1.0/akka-stream-kafka_2.13-1.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.luben",
+                    "name": "zstd-jni",
+                    "version": "1.3.7-1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zstd-jni",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.3.7-1/zstd-jni-1.3.7-1.jar"
+                        },
+                        {
+                            "name": "zstd-jni",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.3.7-1/zstd-jni-1.3.7-1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.xerial.snappy",
+                    "name": "snappy-java",
+                    "version": "1.1.7.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "snappy-java",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.2/snappy-java-1.1.7.2.jar"
+                        },
+                        {
+                            "name": "snappy-java",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.2/snappy-java-1.1.7.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-coordination_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-coordination_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-coordination_2.13/2.6.17/akka-coordination_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-coordination_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-coordination_2.13/2.6.17/akka-coordination_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.lmdbjava",
+                    "name": "lmdbjava",
+                    "version": "0.7.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "lmdbjava",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/lmdbjava/lmdbjava/0.7.0/lmdbjava-0.7.0.jar"
+                        },
+                        {
+                            "name": "lmdbjava",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/lmdbjava/lmdbjava/0.7.0/lmdbjava-0.7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-pki_2.13",
+                    "version": "2.6.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-pki_2.13",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-pki_2.13/2.6.17/akka-pki_2.13-2.6.17.jar"
+                        },
+                        {
+                            "name": "akka-pki_2.13",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-pki_2.13/2.6.17/akka-pki_2.13-2.6.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.agrona",
+                    "name": "agrona",
+                    "version": "1.9.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "agrona",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/agrona/agrona/1.9.0/agrona-1.9.0.jar"
+                        },
+                        {
+                            "name": "agrona",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/org/agrona/agrona/1.9.0/agrona-1.9.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.datastax.cassandra",
+                    "name": "cassandra-driver-core",
+                    "version": "3.7.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cassandra-driver-core",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.7.2/cassandra-driver-core-3.7.2.jar"
+                        },
+                        {
+                            "name": "cassandra-driver-core",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.7.2/cassandra-driver-core-3.7.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.hierynomus",
+                    "name": "asn-one",
+                    "version": "0.5.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "asn-one",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/hierynomus/asn-one/0.5.0/asn-one-0.5.0.jar"
+                        },
+                        {
+                            "name": "asn-one",
+                            "classifier": "sources",
+                            "path": "/home/vscode/.cache/coursier/v1/https/repo1.maven.org/maven2/com/hierynomus/asn-one/0.5.0/asn-one-0.5.0-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}

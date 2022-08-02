@@ -62,4 +62,9 @@ CMD [ "sleep", "infinity" ]
 #     && apt-get -y install --no-install-recommends \
 #    bash-completion curl wget unzip zip
 
-RUN sbt runDecompositionAkka; exit 0
+#RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+RUN curl -L https://github.com/lihaoyi/Ammonite/releases/download/2.2.0/2.13-2.2.0 \
+  -o /usr/local/bin/amm && \
+  chmod +x /usr/local/bin/amm \
+  ;exit 0

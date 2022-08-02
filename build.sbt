@@ -1,5 +1,5 @@
-ThisBuild / organization := "com.tomriddelsdell"
-ThisBuild / version := "0.1"
+ThisBuild / organization := "com.example"
+ThisBuild / version := "1.0-SNAPSHOT"
 
 // the Scala version that will be used for cross-compiled libraries
 ThisBuild / scalaVersion := "2.13.8"

@@ -1,0 +1,12 @@
+Allowed words:
+
+Nouns:
+Executions: The filled orders executed by a Strategy. One execution may have many fills and a single Average Price
+Strategy: This is the rule book for an algo
+Instrument: The object that a Strategy trades in the market
+Order: A record of intention of a Strategy to trade 
+Fill: The quantity of an Instrument traded at a certain Price. 
+
+Verbs:
+Trade: A Strategy trades one Instrument for another. 
+

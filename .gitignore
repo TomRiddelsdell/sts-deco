@@ -11,6 +11,9 @@ bin
 .factorypath
 .settings
 logs
+metals
 .metals
-.vscode
 project
+.project
+vscode
+.vscode
